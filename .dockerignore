@@ -1,0 +1,6 @@
+.env
+.env.*
+.git
+evidence
+delivery
+node_modules
