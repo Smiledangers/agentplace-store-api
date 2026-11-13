@@ -1,0 +1,12 @@
+[
+  {"id":"P001","name":"無線滑鼠","stock":25},
+  {"id":"P002","name":"機械鍵盤","stock":12},
+  {"id":"P003","name":"USB-C 充電線","stock":100},
+  {"id":"P004","name":"藍牙耳機","stock":0},
+  {"id":"P005","name":"筆電支架","stock":18},
+  {"id":"P006","name":"網路攝影機","stock":7},
+  {"id":"P007","name":"行動電源","stock":30},
+  {"id":"P008","name":"桌上型麥克風","stock":5},
+  {"id":"P009","name":"外接 SSD","stock":9},
+  {"id":"P010","name":"螢幕掛燈","stock":16}
+]
