@@ -1,15 +1,23 @@
-# 模型設定核對
+# Model Configuration Evidence
 
-2026-11-13，Agentplace Builder 讀取專案來源後回報：
+During the original setup on November 13, 2026, the Agentplace Builder reported the following after inspecting its generated runtime source:
 
-- agent-dev-server/src/config.ts 的 AGENT_CONFIG.modelId 為 openai.gpt-6-luna。
-- reasoning effort 為 low。
-- 本專案未設定 roleModels；Luna 路徑停用子代理工具。
-- Builder 選單亦已選取 GPT-6 Luna。
+- AGENT_CONFIG.modelId in agent-dev-server/src/config.ts was openai.gpt-6-luna.
+- Reasoning effort was low.
+- No roleModels override was found.
+- The Luna-specific tool-registration path disabled subagent tools.
+- The Builder model selector was set to GPT-6 Luna.
 
-這些是來源設定的證據，不宣稱已獨立取得平台每一次請求的實際供應商路由或帳務紀錄。平台路由由 Agentplace 管理。
+## Verification boundary
 
-Agentplace 官方說明 Luna 模型使用免費：
+The generated Agentplace runtime source is not part of this backend checkout. The statements above are a recorded Builder source-inspection report, not a new independent inspection performed by this localization change.
+
+The selected configuration does not prove the resolved provider model, routing decision, or billing result for every request. Those decisions are managed by Agentplace. No claim of independently verified per-turn routing or billing is made.
+
+Agentplace's published explanation of Luna usage is available at:
+
 https://agentplace.io/docs/monetization/platform-usage-and-billing
 
-自訂 API 只以伺服器端環境設定 STORE_API_BASE_URL 與 STORE_API_TOKEN 存取；此文件不包含任何秘密。
+That reference describes the platform's policy; it is separate from evidence of a particular request's execution.
+
+The integration references STORE_API_BASE_URL and STORE_API_TOKEN as server-side environment variables. No credential values are included in this document.
