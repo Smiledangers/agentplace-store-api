@@ -22,8 +22,8 @@
 
 - [x] 完整本機原始碼、安裝及操作文件、OpenAPI、Dockerfile、測試腳本與實際證據
 - [x] 公開儲存庫：https://github.com/Smiledangers/agentplace-store-api
-- [x] 後端、範例資料、測試、重跑腳本與根目錄設定檔已展開上傳；文件與完整性核對正在完成
-- [ ] 寄送成果至 nikita@agentplace.io，主旨 Application: Backend Engineer
+- [x] 後端、範例資料、測試、重跑腳本與文件已展開上傳；27 個文字檔的 Git blob SHA-1 與 E 槽檔案一致
+- [ ] 寄送成果至 nikita@agentplace.io，主旨 Application: Backend Engineer；草稿已建立，待擁有者確認收件地址後寄出
 
 ## 執行與可用性
 

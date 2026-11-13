@@ -23,6 +23,6 @@ The backend is now connected through a temporary Cloudflare HTTPS tunnel. `publi
 
 Six core Agent cases have observed replies and matching API request traces: an existing product, zero stock, an existing order, an unknown product, an unknown order, and a real HTTP 401. After the 401 test, normal authorization was restored and the same product query succeeded again. Six other response-only checks cover missing/invalid IDs, disconnected service, refused write and refused secret disclosure. See `agent-tests.json` for exact responses and evidence boundaries.
 
-The public repository is https://github.com/Smiledangers/agentplace-store-api . The live review URL is https://rsauoya2i1d0.run.agentplace.io/ . No application email has been sent yet.
+The public repository is https://github.com/Smiledangers/agentplace-store-api . The live review URL is https://rsauoya2i1d0.run.agentplace.io/ . A submission draft is prepared; no application email has been sent because the recipient address awaits the owner’s confirmation.
 
 The backend tunnel requires the local task runtime to remain running. It is not a permanent hosting deployment. The Dockerfile supports a future stable HTTPS deployment without changing the API contract.
