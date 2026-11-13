@@ -1,28 +1,28 @@
-# Reviewer quick start
+# Reviewer Quick Start
 
-This is a read-only store service for the Agentplace Backend Engineer exercise. All records are synthetic. It requires Node.js 22+ and has no third-party runtime dependencies.
+This repository implements the API portion of the Agentplace Backend Engineer exercise and includes recorded integration evidence. All business records are synthetic.
 
-1. Copy `.env.example` to `.env`, set a random `STORE_API_KEY` of at least 32 characters, and run `npm start`.
-2. The local default port is **43187**. Port 3000 is deliberately avoided because an existing service uses it on the author's computer. A bind failure exits without affecting the other service.
-3. Call `GET /api/products/P001/inventory` or `GET /api/orders/O004/status` with `Authorization: Bearer YOUR_TOKEN`.
-4. Run `npm test` and `npm run evidence`. The evidence runner makes actual HTTP requests against an isolated ephemeral local server and shuts it down afterward.
+1. Use Node.js 22 or later. No third-party runtime dependencies need to be installed.
+2. Follow README.md to create a private .env and start the service. The default local port is 43187.
+3. Query GET /api/products/P001/inventory or GET /api/orders/O004/status using a valid Bearer token.
+4. Run npm test. The suite uses an isolated ephemeral server and does not require the live demonstration.
+5. Read API.md for the existing request and response contract.
+6. Read TEST_RESULTS.md for an English guide to the original observations and their limits.
 
-The current HTTP evidence contains **50 passing scenarios**, including all 10 products and 10 orders, zero stock, unknown records, invalid identifiers, missing/incorrect credentials, and rejected write methods. The Node test report contains 52 passing tests including the parent test and fail-closed configuration test.
+## What the evidence supports
 
-Success responses use `{ "data": ... }`. Failures use `{ "error": { "code": ..., "message": ... } }`. API routes authenticate before validation. A missing or invalid token returns 401; invalid identifiers return 400; well-formed but absent identifiers return 404. Only GET is supported. The public health/schema routes contain no credentials.
+The historical local run contains 50 passing HTTP scenarios. The Node runner reports 52 passing entries, including the parent test and fail-closed configuration check.
 
-The shared token grants service-level read access to synthetic records. It is not customer-level authorization. A production store would need verified customer identity and order-ownership checks before serving real orders.
+The historical public HTTPS run contains 49 application-contract passes and one malformed URL rejected at the Cloudflare edge. Six core Agent cases have observed replies with matching HTTP traces; six other cases verify response behavior only. Recovery and a published-agent lookup are recorded separately.
 
-`openapi.json` contains the two tool operation contracts. Replace its local server URL with a real HTTPS deployment URL before integration. Agent credentials belong in the platform's server-side secret settings, never in frontend code or messages.
+Original responses, timestamps, and traces have not been rewritten. Some source evidence and fixture names remain in Traditional Chinese. TEST_RESULTS.md supplies English explanations without presenting them as new English-language test runs.
 
-## Integration evidence and limits
+## What remains limited
 
-The Agentplace source configuration selects `openai.gpt-6-luna` with low reasoning effort and no role-specific overrides. The Builder was also explicitly set to GPT-6 Luna. Provider routing is managed by the platform; the source setting does not establish the resolved provider model for every turn.
+The shared token grants service-level access to synthetic data. There are no customer accounts or order-ownership checks. JSON fixtures are loaded at startup; there is no database or write interface.
 
-The backend is now connected through a temporary Cloudflare HTTPS tunnel. `public-api-results.json` records 49 successful API contract checks and one malformed URL rejected by the edge with HTTP 400 before reaching the application. Local Node tests cover that malformed URL's JSON response at the application layer.
+The published agent is https://rsauoya2i1d0.run.agentplace.io/. Its backend uses a temporary local tunnel. A permanent backend, uptime guarantee, load-capacity claim, and production-readiness claim are not established. See DEPLOYMENT.md.
 
-Six core Agent cases have observed replies and matching API request traces: an existing product, zero stock, an existing order, an unknown product, an unknown order, and a real HTTP 401. After the 401 test, normal authorization was restored and the same product query succeeded again. Six other response-only checks cover missing/invalid IDs, disconnected service, refused write and refused secret disclosure. See `agent-tests.json` for exact responses and evidence boundaries.
+The reported Luna configuration is documented in MODEL.md. Per-request provider routing and billing were not independently inspected.
 
-The public repository is https://github.com/Smiledangers/agentplace-store-api . The live review URL is https://rsauoya2i1d0.run.agentplace.io/ . A submission draft is prepared; no application email has been sent because the recipient address awaits the owner’s confirmation.
-
-The backend tunnel requires the local task runtime to remain running. It is not a permanent hosting deployment. The Dockerfile supports a future stable HTTPS deployment without changing the API contract.
+The root ZIP is an initial snapshot; the expanded main-branch files are the current review target. The application email remains an unsent draft. No live settings or email are changed by this documentation-only localization.
