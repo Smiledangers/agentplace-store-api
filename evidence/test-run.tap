@@ -1,0 +1,323 @@
+TAP version 13
+# Subtest: configuration fails closed
+ok 1 - configuration fails closed
+  ---
+  duration_ms: 2.7947
+  type: 'test'
+  ...
+# Subtest: HTTP API contract and access control
+    # Subtest: product P001
+    ok 1 - product P001
+      ---
+      duration_ms: 41.0738
+      type: 'test'
+      ...
+    # Subtest: product P002
+    ok 2 - product P002
+      ---
+      duration_ms: 9.7867
+      type: 'test'
+      ...
+    # Subtest: product P003
+    ok 3 - product P003
+      ---
+      duration_ms: 6.8692
+      type: 'test'
+      ...
+    # Subtest: product P004
+    ok 4 - product P004
+      ---
+      duration_ms: 14.0658
+      type: 'test'
+      ...
+    # Subtest: product P005
+    ok 5 - product P005
+      ---
+      duration_ms: 8.052
+      type: 'test'
+      ...
+    # Subtest: product P006
+    ok 6 - product P006
+      ---
+      duration_ms: 8.1227
+      type: 'test'
+      ...
+    # Subtest: product P007
+    ok 7 - product P007
+      ---
+      duration_ms: 6.5467
+      type: 'test'
+      ...
+    # Subtest: product P008
+    ok 8 - product P008
+      ---
+      duration_ms: 10.7468
+      type: 'test'
+      ...
+    # Subtest: product P009
+    ok 9 - product P009
+      ---
+      duration_ms: 23.5605
+      type: 'test'
+      ...
+    # Subtest: product P010
+    ok 10 - product P010
+      ---
+      duration_ms: 22.9085
+      type: 'test'
+      ...
+    # Subtest: order O001
+    ok 11 - order O001
+      ---
+      duration_ms: 11.8247
+      type: 'test'
+      ...
+    # Subtest: order O002
+    ok 12 - order O002
+      ---
+      duration_ms: 6.8576
+      type: 'test'
+      ...
+    # Subtest: order O003
+    ok 13 - order O003
+      ---
+      duration_ms: 4.3118
+      type: 'test'
+      ...
+    # Subtest: order O004
+    ok 14 - order O004
+      ---
+      duration_ms: 5.9178
+      type: 'test'
+      ...
+    # Subtest: order O005
+    ok 15 - order O005
+      ---
+      duration_ms: 4.7117
+      type: 'test'
+      ...
+    # Subtest: order O006
+    ok 16 - order O006
+      ---
+      duration_ms: 12.5651
+      type: 'test'
+      ...
+    # Subtest: order O007
+    ok 17 - order O007
+      ---
+      duration_ms: 4.166
+      type: 'test'
+      ...
+    # Subtest: order O008
+    ok 18 - order O008
+      ---
+      duration_ms: 9.2096
+      type: 'test'
+      ...
+    # Subtest: order O009
+    ok 19 - order O009
+      ---
+      duration_ms: 5.2641
+      type: 'test'
+      ...
+    # Subtest: order O010
+    ok 20 - order O010
+      ---
+      duration_ms: 5.9032
+      type: 'test'
+      ...
+    # Subtest: unknown product
+    ok 21 - unknown product
+      ---
+      duration_ms: 6.8787
+      type: 'test'
+      ...
+    # Subtest: unknown order
+    ok 22 - unknown order
+      ---
+      duration_ms: 15.0931
+      type: 'test'
+      ...
+    # Subtest: invalid product abc
+    ok 23 - invalid product abc
+      ---
+      duration_ms: 3.7124
+      type: 'test'
+      ...
+    # Subtest: invalid product P000
+    ok 24 - invalid product P000
+      ---
+      duration_ms: 4.8818
+      type: 'test'
+      ...
+    # Subtest: invalid product P01
+    ok 25 - invalid product P01
+      ---
+      duration_ms: 7.8885
+      type: 'test'
+      ...
+    # Subtest: invalid product p001
+    ok 26 - invalid product p001
+      ---
+      duration_ms: 3.9985
+      type: 'test'
+      ...
+    # Subtest: invalid product O001
+    ok 27 - invalid product O001
+      ---
+      duration_ms: 3.4228
+      type: 'test'
+      ...
+    # Subtest: invalid product %20P001
+    ok 28 - invalid product %20P001
+      ---
+      duration_ms: 6.8404
+      type: 'test'
+      ...
+    # Subtest: invalid product %ZZ
+    ok 29 - invalid product %ZZ
+      ---
+      duration_ms: 6.411
+      type: 'test'
+      ...
+    # Subtest: invalid product P001%2Finventory
+    ok 30 - invalid product P001%2Finventory
+      ---
+      duration_ms: 3.9359
+      type: 'test'
+      ...
+    # Subtest: invalid product P001%0A
+    ok 31 - invalid product P001%0A
+      ---
+      duration_ms: 6.3962
+      type: 'test'
+      ...
+    # Subtest: invalid order abc
+    ok 32 - invalid order abc
+      ---
+      duration_ms: 4.0977
+      type: 'test'
+      ...
+    # Subtest: invalid order O000
+    ok 33 - invalid order O000
+      ---
+      duration_ms: 3.9658
+      type: 'test'
+      ...
+    # Subtest: invalid order O01
+    ok 34 - invalid order O01
+      ---
+      duration_ms: 4.9172
+      type: 'test'
+      ...
+    # Subtest: invalid order o001
+    ok 35 - invalid order o001
+      ---
+      duration_ms: 3.8998
+      type: 'test'
+      ...
+    # Subtest: invalid order P001
+    ok 36 - invalid order P001
+      ---
+      duration_ms: 4.4621
+      type: 'test'
+      ...
+    # Subtest: invalid order O001%0A
+    ok 37 - invalid order O001%0A
+      ---
+      duration_ms: 8.103
+      type: 'test'
+      ...
+    # Subtest: missing product ID
+    ok 38 - missing product ID
+      ---
+      duration_ms: 2.2926
+      type: 'test'
+      ...
+    # Subtest: missing order ID
+    ok 39 - missing order ID
+      ---
+      duration_ms: 3.3089
+      type: 'test'
+      ...
+    # Subtest: unexpected query
+    ok 40 - unexpected query
+      ---
+      duration_ms: 2.8665
+      type: 'test'
+      ...
+    # Subtest: missing token
+    ok 41 - missing token
+      ---
+      duration_ms: 3.2133
+      type: 'test'
+      ...
+    # Subtest: wrong token
+    ok 42 - wrong token
+      ---
+      duration_ms: 3.5035
+      type: 'test'
+      ...
+    # Subtest: unauthorized invalid ID
+    ok 43 - unauthorized invalid ID
+      ---
+      duration_ms: 2.2756
+      type: 'test'
+      ...
+    # Subtest: reject POST
+    ok 44 - reject POST
+      ---
+      duration_ms: 3.0718
+      type: 'test'
+      ...
+    # Subtest: reject PUT
+    ok 45 - reject PUT
+      ---
+      duration_ms: 3.284
+      type: 'test'
+      ...
+    # Subtest: reject PATCH
+    ok 46 - reject PATCH
+      ---
+      duration_ms: 4.9887
+      type: 'test'
+      ...
+    # Subtest: reject DELETE
+    ok 47 - reject DELETE
+      ---
+      duration_ms: 3.5616
+      type: 'test'
+      ...
+    # Subtest: unknown route
+    ok 48 - unknown route
+      ---
+      duration_ms: 3.7302
+      type: 'test'
+      ...
+    # Subtest: health
+    ok 49 - health
+      ---
+      duration_ms: 2.4257
+      type: 'test'
+      ...
+    # Subtest: OpenAPI
+    ok 50 - OpenAPI
+      ---
+      duration_ms: 3.3643
+      type: 'test'
+      ...
+    1..50
+ok 2 - HTTP API contract and access control
+  ---
+  duration_ms: 411.2473
+  type: 'test'
+  ...
+1..2
+# tests 52
+# suites 0
+# pass 52
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 745.117

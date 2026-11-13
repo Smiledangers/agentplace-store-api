@@ -1,0 +1,932 @@
+{
+  "recordedAt": "2026-11-13T09:40:15.844Z",
+  "origin": "https://downtown-greg-recorders-husband.trycloudflare.com",
+  "source": "Actual public HTTPS requests; not Agentplace responses",
+  "results": [
+    {
+      "name": "product P001",
+      "method": "GET",
+      "path": "/api/products/P001/inventory",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "P001",
+          "name": "無線滑鼠",
+          "stock": 25,
+          "available": true
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "product P002",
+      "method": "GET",
+      "path": "/api/products/P002/inventory",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "P002",
+          "name": "機械鍵盤",
+          "stock": 12,
+          "available": true
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "product P003",
+      "method": "GET",
+      "path": "/api/products/P003/inventory",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "P003",
+          "name": "USB-C 充電線",
+          "stock": 100,
+          "available": true
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "product P004",
+      "method": "GET",
+      "path": "/api/products/P004/inventory",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "P004",
+          "name": "藍牙耳機",
+          "stock": 0,
+          "available": false
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "product P005",
+      "method": "GET",
+      "path": "/api/products/P005/inventory",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "P005",
+          "name": "筆電支架",
+          "stock": 18,
+          "available": true
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "product P006",
+      "method": "GET",
+      "path": "/api/products/P006/inventory",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "P006",
+          "name": "網路攝影機",
+          "stock": 7,
+          "available": true
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "product P007",
+      "method": "GET",
+      "path": "/api/products/P007/inventory",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "P007",
+          "name": "行動電源",
+          "stock": 30,
+          "available": true
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "product P008",
+      "method": "GET",
+      "path": "/api/products/P008/inventory",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "P008",
+          "name": "桌上型麥克風",
+          "stock": 5,
+          "available": true
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "product P009",
+      "method": "GET",
+      "path": "/api/products/P009/inventory",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "P009",
+          "name": "外接 SSD",
+          "stock": 9,
+          "available": true
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "product P010",
+      "method": "GET",
+      "path": "/api/products/P010/inventory",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "P010",
+          "name": "螢幕掛燈",
+          "stock": 16,
+          "available": true
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "order O001",
+      "method": "GET",
+      "path": "/api/orders/O001/status",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "O001",
+          "status": "pending",
+          "updatedAt": "2026-11-13T00:00:00Z"
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "order O002",
+      "method": "GET",
+      "path": "/api/orders/O002/status",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "O002",
+          "status": "paid",
+          "updatedAt": "2026-11-13T00:05:00Z"
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "order O003",
+      "method": "GET",
+      "path": "/api/orders/O003/status",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "O003",
+          "status": "processing",
+          "updatedAt": "2026-11-13T00:10:00Z"
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "order O004",
+      "method": "GET",
+      "path": "/api/orders/O004/status",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "O004",
+          "status": "shipped",
+          "updatedAt": "2026-11-13T00:15:00Z"
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "order O005",
+      "method": "GET",
+      "path": "/api/orders/O005/status",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "O005",
+          "status": "delivered",
+          "updatedAt": "2026-11-13T00:20:00Z"
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "order O006",
+      "method": "GET",
+      "path": "/api/orders/O006/status",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "O006",
+          "status": "cancelled",
+          "updatedAt": "2026-11-13T00:25:00Z"
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "order O007",
+      "method": "GET",
+      "path": "/api/orders/O007/status",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "O007",
+          "status": "refunded",
+          "updatedAt": "2026-11-13T00:30:00Z"
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "order O008",
+      "method": "GET",
+      "path": "/api/orders/O008/status",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "O008",
+          "status": "processing",
+          "updatedAt": "2026-11-13T00:35:00Z"
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "order O009",
+      "method": "GET",
+      "path": "/api/orders/O009/status",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "O009",
+          "status": "shipped",
+          "updatedAt": "2026-11-13T00:40:00Z"
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "order O010",
+      "method": "GET",
+      "path": "/api/orders/O010/status",
+      "httpStatus": 200,
+      "response": {
+        "data": {
+          "id": "O010",
+          "status": "delivered",
+          "updatedAt": "2026-11-13T00:45:00Z"
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "unknown product",
+      "method": "GET",
+      "path": "/api/products/P999/inventory",
+      "httpStatus": 404,
+      "response": {
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "Product not found."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "unknown order",
+      "method": "GET",
+      "path": "/api/orders/O999/status",
+      "httpStatus": 404,
+      "response": {
+        "error": {
+          "code": "NOT_FOUND",
+          "message": "Order not found."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid product abc",
+      "method": "GET",
+      "path": "/api/products/abc/inventory",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Product ID must be P001–P999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid product P000",
+      "method": "GET",
+      "path": "/api/products/P000/inventory",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Product ID must be P001–P999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid product P01",
+      "method": "GET",
+      "path": "/api/products/P01/inventory",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Product ID must be P001–P999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid product p001",
+      "method": "GET",
+      "path": "/api/products/p001/inventory",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Product ID must be P001–P999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid product O001",
+      "method": "GET",
+      "path": "/api/products/O001/inventory",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Product ID must be P001–P999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid product %20P001",
+      "method": "GET",
+      "path": "/api/products/%20P001/inventory",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Product ID must be P001–P999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid product %ZZ",
+      "path": "/api/products/%ZZ/inventory",
+      "httpStatus": 400,
+      "contentType": "text/html",
+      "result": "EDGE_REJECTED",
+      "note": "Malformed URL rejected by the HTTPS edge before the application; JSON error contract is not applicable at this layer."
+    },
+    {
+      "name": "invalid product P001%2Finventory",
+      "method": "GET",
+      "path": "/api/products/P001%2Finventory/inventory",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Product ID must be P001–P999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid product P001%0A",
+      "method": "GET",
+      "path": "/api/products/P001%0A/inventory",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Product ID must be P001–P999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid order abc",
+      "method": "GET",
+      "path": "/api/orders/abc/status",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Order ID must be O001–O999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid order O000",
+      "method": "GET",
+      "path": "/api/orders/O000/status",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Order ID must be O001–O999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid order O01",
+      "method": "GET",
+      "path": "/api/orders/O01/status",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Order ID must be O001–O999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid order o001",
+      "method": "GET",
+      "path": "/api/orders/o001/status",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Order ID must be O001–O999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid order P001",
+      "method": "GET",
+      "path": "/api/orders/P001/status",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Order ID must be O001–O999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "invalid order O001%0A",
+      "method": "GET",
+      "path": "/api/orders/O001%0A/status",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Order ID must be O001–O999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "missing product ID",
+      "method": "GET",
+      "path": "/api/products//inventory",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Product ID must be P001–P999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "missing order ID",
+      "method": "GET",
+      "path": "/api/orders//status",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_ID",
+          "message": "Order ID must be O001–O999."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "unexpected query",
+      "method": "GET",
+      "path": "/api/products/P001/inventory?stock=500",
+      "httpStatus": 400,
+      "response": {
+        "error": {
+          "code": "INVALID_QUERY",
+          "message": "Query parameters are not supported."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "missing token",
+      "method": "GET",
+      "path": "/api/products/P001/inventory",
+      "httpStatus": 401,
+      "response": {
+        "error": {
+          "code": "UNAUTHORIZED",
+          "message": "A valid Bearer token is required."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "wrong token",
+      "method": "GET",
+      "path": "/api/orders/O001/status",
+      "httpStatus": 401,
+      "response": {
+        "error": {
+          "code": "UNAUTHORIZED",
+          "message": "A valid Bearer token is required."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "unauthorized invalid ID",
+      "method": "GET",
+      "path": "/api/orders/bad/status",
+      "httpStatus": 401,
+      "response": {
+        "error": {
+          "code": "UNAUTHORIZED",
+          "message": "A valid Bearer token is required."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "reject POST",
+      "method": "POST",
+      "path": "/api/products/P001/inventory",
+      "httpStatus": 405,
+      "response": {
+        "error": {
+          "code": "METHOD_NOT_ALLOWED",
+          "message": "Only GET is supported."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "reject PUT",
+      "method": "PUT",
+      "path": "/api/products/P001/inventory",
+      "httpStatus": 405,
+      "response": {
+        "error": {
+          "code": "METHOD_NOT_ALLOWED",
+          "message": "Only GET is supported."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "reject PATCH",
+      "method": "PATCH",
+      "path": "/api/products/P001/inventory",
+      "httpStatus": 405,
+      "response": {
+        "error": {
+          "code": "METHOD_NOT_ALLOWED",
+          "message": "Only GET is supported."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "reject DELETE",
+      "method": "DELETE",
+      "path": "/api/products/P001/inventory",
+      "httpStatus": 405,
+      "response": {
+        "error": {
+          "code": "METHOD_NOT_ALLOWED",
+          "message": "Only GET is supported."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "unknown route",
+      "method": "GET",
+      "path": "/api/admin",
+      "httpStatus": 404,
+      "response": {
+        "error": {
+          "code": "ROUTE_NOT_FOUND",
+          "message": "API route not found."
+        }
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "health",
+      "method": "GET",
+      "path": "/health",
+      "httpStatus": 200,
+      "response": {
+        "status": "ok"
+      },
+      "result": "PASS"
+    },
+    {
+      "name": "OpenAPI",
+      "method": "GET",
+      "path": "/openapi.json",
+      "httpStatus": 200,
+      "response": {
+        "openapi": "3.0.3",
+        "info": {
+          "title": "Read-only Store API",
+          "version": "1.0.0",
+          "description": "Synthetic demo data only. IDs use uppercase prefix and three digits, excluding 000. No query parameters or write operations."
+        },
+        "servers": [
+          {
+            "url": "http://127.0.0.1:43187",
+            "description": "Local development; replace with public HTTPS deployment for Agentplace"
+          }
+        ],
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "paths": {
+          "/api/products/{productId}/inventory": {
+            "get": {
+              "operationId": "getProductInventory",
+              "summary": "getProductInventory",
+              "parameters": [
+                {
+                  "name": "productId",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "pattern": "^P(?!000)[0-9]{3}$",
+                    "minLength": 4,
+                    "maxLength": 4
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful read",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "required": [
+                          "data"
+                        ],
+                        "properties": {
+                          "data": {
+                            "type": "object",
+                            "required": [
+                              "id",
+                              "name",
+                              "stock",
+                              "available"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "stock": {
+                                "type": "integer",
+                                "minimum": 0
+                              },
+                              "available": {
+                                "type": "boolean"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid ID or unsupported query parameters",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Missing or invalid Bearer token",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Record or route not found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "405": {
+                  "description": "Method not allowed",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/orders/{orderId}/status": {
+            "get": {
+              "operationId": "getOrderStatus",
+              "summary": "getOrderStatus",
+              "parameters": [
+                {
+                  "name": "orderId",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "pattern": "^O(?!000)[0-9]{3}$",
+                    "minLength": 4,
+                    "maxLength": 4
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful read",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "required": [
+                          "data"
+                        ],
+                        "properties": {
+                          "data": {
+                            "type": "object",
+                            "required": [
+                              "id",
+                              "status",
+                              "updatedAt"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "status": {
+                                "type": "string",
+                                "enum": [
+                                  "pending",
+                                  "paid",
+                                  "processing",
+                                  "shipped",
+                                  "delivered",
+                                  "cancelled",
+                                  "refunded"
+                                ]
+                              },
+                              "updatedAt": {
+                                "type": "string",
+                                "format": "date-time"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "Invalid ID or unsupported query parameters",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "401": {
+                  "description": "Missing or invalid Bearer token",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Record or route not found",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                },
+                "405": {
+                  "description": "Method not allowed",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "securitySchemes": {
+            "bearerAuth": {
+              "type": "http",
+              "scheme": "bearer"
+            }
+          },
+          "schemas": {
+            "Error": {
+              "type": "object",
+              "required": [
+                "error"
+              ],
+              "properties": {
+                "error": {
+                  "type": "object",
+                  "required": [
+                    "code",
+                    "message"
+                  ],
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "result": "PASS"
+    }
+  ]
+}
